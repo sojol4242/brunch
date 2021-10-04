@@ -17,26 +17,35 @@
     <!-- custom css -->
     <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media__query.css" />
   </head>
   <body>
     <header class="header">
-      <img class="logo"
-      src="https://i.ibb.co/4t1bzrb/brunch.png"
-      alt="logo" title="brunch">
+      <img
+        class="logo"
+        src="https://i.ibb.co/4t1bzrb/brunch.png"
+        alt="logo"
+        title="brunch"
+      />
       <nav class="navbar">
         <ul class="nav__list">
           <li><a href="#home" class="nav__item">Home</a></li>
           <li><a href="#features" class="nav__item">Features</a></li>
           <li><a href="#why__us" class="nav__item">Why us?</a></li>
-          <li><a href="#" class="nav__item">About us</a></li>
-          <li><a href="#" class="nav__item nav__cta">Contact</a></li>
+          <li><a href="#testimonial" class="nav__item">Testimonials</a></li>
+          <li><a href="#contact" class="nav__item">Contact</a></li>
+          <li><a href="#" class="nav__item nav__cta">Log in</a></li>
         </ul>
       </nav>
+      <div class="nav__bar__icon">
+        <i class="fas fa-bars nav__open__icon"></i>
+        <i class="fas fa-close nav__close__icon"></i>
+      </div>
     </header>
     <main>
       <!-- hero section -->
       <section class="hero__section">
-        <div id="home" class="hero">
+        <div id="home" class="hero grid responsive__grid">
           <div class="hero__text__box">
             <h1 class="primary__title">
               Hungry? You are in the right place. Stay tuned and enjoy..
@@ -89,30 +98,7 @@
           </div>
         </div>
       </section>
-      <!-- features sections -->
-      <section id="features" class="features__section">
-        <div class="container">
-          <h2 class="heading__features">As featured in</h2>
-          <div class="logos">
-            <img
-              src="https://i.ibb.co/s6GCvZX/Foodpanda-Logo.jpg"
-              alt="logos"
-            />
-            <img
-              src="https://i.ibb.co/pLHDyMd/1-kg5-JVNg-H-o-Jmw-CBSA0-NAXA-removebg-preview.png"
-              alt="logos"
-            />
-            <img
-              src="https://jotodeal.com/wp-content/uploads/thumbs_dir/HungryNaki-1xrjyzhesikpfdsoim6064k4jn8uuo1pauqp6yb7gv8k.png"
-              alt="logos"
-            />
-            <img
-              src="https://i.ibb.co/N1mfxW1/images-removebg-preview.png"
-              alt="logos"
-            />
-          </div>
-        </div>
-      </section>
+
       <!--  how its work section -->
       <section id="why__us" class="how__section">
         <div class="container">
@@ -123,9 +109,9 @@
         <div
           class="
             container
-            grid grid__2__cols grid__center__v
-            margin__bottom__md
-            grid__center__h
+            grid
+            responsive__grid
+            grid__center__v grid__center__h
           "
         >
           <div class="step__text__box">
@@ -141,7 +127,8 @@
           </div>
           <div class="step__img__box">
             <img
-              src="https://cdn.moontechnolabs.com/live/images/images_svg/hotel_about.svg"
+              src="
+              https://i.ibb.co/CtPjsNj/482846450ac995ca29d21134824b935f-removebg-preview.png"
               alt="step__image"
               class="step__image"
             />
@@ -151,13 +138,14 @@
         <div
           class="
             container
-            grid grid__2__cols grid__center__v grid__center__h
-            margin__bottom__md
+            grid
+            responsive__grid
+            grid__center__h grid__center__v
           "
         >
           <div class="step__img__box">
             <img
-              src="https://cdn.moontechnolabs.com/live/images/images_svg/hotel_about.svg"
+              src="https://i.ibb.co/qR056xL/482846450ac995ca29d21134824b9w35f-removebg-preview.png"
               alt="step__image"
               class="step__image"
             />
@@ -174,7 +162,12 @@
         </div>
         <!-- step 03-->
         <div
-          class="container grid grid__2__cols grid__center__h grid__center__v"
+          class="
+            container
+            grid
+            responsive__grid
+            grid__center__h grid__center__v
+          "
         >
           <div class="step__text__box">
             <p class="step__number">03</p>
@@ -189,7 +182,7 @@
           </div>
           <div class="step__img__box">
             <img
-              src="https://cdn.moontechnolabs.com/live/images/images_svg/hotel_about.svg"
+              src="https://i.ibb.co/T4zfVdG/482846450ac995ca29d21134824b935f3-removebg-preview-1.png"
               alt="step__image"
               class="step__image"
             />
@@ -204,7 +197,7 @@
             We have 24,000+ Meal all over the cities
           </h2>
         </div>
-        <div class="container grid grid__3__cols margin__bottom__md">
+        <div class="container grid responsive__grid margin__bottom__md">
           <div class="meal">
             <img
               src="https://media.istockphoto.com/photos/woman-preparing-healthy-meals-picture-id1289062348?b=1&k=20&m=1289062348&s=170667a&w=0&h=hqdomjKGhUkM3kBNcX0b4CS5bZpX9shbvF4BjoNCHiw="
@@ -297,7 +290,10 @@
 
       <!-- Testimonial section -->
 
-      <section class="testimonial__section grid responsive__grid">
+      <section
+        id="testimonial"
+        class="testimonial__section grid responsive__grid"
+      >
         <div class="testimonials">
           <span class="sub__title">Testimonial</span>
           <h2 class="secondary__title">Our happy clients</h2>
@@ -421,7 +417,7 @@
               alt="gallery__image"
             />
           </figure>
-          <figure >
+          <figure>
             <img
               src="https://media.istockphoto.com/photos/pumpkin-pasta-with-mushroom-and-hazelnuts-picture-id1257465150?b=1&k=20&m=1257465150&s=170667a&w=0&h=3M1hR70wNrMt3EuPn1T8HR7d_aosX9iPFOj0zZEi5zU="
               alt="gallery__image"
@@ -447,9 +443,68 @@
           </figure>
         </div>
       </section>
+      <!-- features__section -->
+      <div id="features" class="features__section">
+        <div class="text__center">
+          <span class="sub__title">Features</span>
+          <h2 class="secondary__title">As features in</h2>
+        </div>
+        <div class="features grid responsive__grid">
+          <div class="feature">
+            <img
+              src="https://img.icons8.com/fluency/48/000000/organic-food.png"
+            />
+
+            <p class="features__title">Local and organic deller</p>
+            <p class="features__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+              corporis animi fugiat illum iste adipisci doloremque, ducimus
+              obcaecati delectus eligendi minus eos, nemo nisi, itaque
+              temporibus harum? Obcaecati, illum et.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img
+              src="https://img.icons8.com/external-itim2101-flat-itim2101/64/000000/external-motorcycle-logistics-and-delivery-itim2101-flat-itim2101.png"
+            />
+            <p class="features__title">Energetic Delivery</p>
+            <p class="features__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+              corporis animi fugiat illum iste adipisci doloremque, ducimus
+              obcaecati delectus eligendi minus eos, nemo nisi, itaque
+              temporibus harum? Obcaecati, illum et.
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/000000/external-recycling-ecology-environment-wanicon-lineal-color-wanicon.png"
+            />
+            <p class="features__title">No Waste</p>
+            <p class="features__text">
+              package for reusable ipsum dolor sit amet, consectetur adipisicing
+              elit. Hic corporis animi fugiat illum iste adipisci doloremque,
+              ducimus obcaecati delectus eligendi minus eos, nemo nisi, itaque
+              temporibus harum? Obcaecati, illum et.
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="https://img.icons8.com/flat-round/64/000000/pause--v1.png"
+            />
+            <p class="features__title">Pause anytime</p>
+            <p class="features__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+              corporis animi fugiat illum iste adipisci doloremque, ducimus
+              obcaecati delectus eligendi minus eos, nemo nisi, itaque
+              temporibus harum? Obcaecati, illum et.
+            </p>
+          </div>
+        </div>
+      </div>
 
       <!-- Contact section -->
-      <section class="contact__us__section">
+      <section id="contact" class="contact__us__section">
         <div class="container">
           <div class="contact__us">
             <div class="contact__us__formbox">
@@ -497,10 +552,90 @@
           </div>
         </div>
       </section>
+      <!-- company  sections -->
+      <section class="company__section">
+        <div class="container">
+          <h2 class="heading__companies">Our collaborator</h2>
+          <div class="logos">
+            <img
+              src="https://i.ibb.co/s6GCvZX/Foodpanda-Logo.jpg"
+              alt="logos"
+            />
+            <img
+              src="https://i.ibb.co/pLHDyMd/1-kg5-JVNg-H-o-Jmw-CBSA0-NAXA-removebg-preview.png"
+              alt="logos"
+            />
+            <img
+              src="https://jotodeal.com/wp-content/uploads/thumbs_dir/HungryNaki-1xrjyzhesikpfdsoim6064k4jn8uuo1pauqp6yb7gv8k.png"
+              alt="logos"
+            />
+            <img
+              src="https://i.ibb.co/N1mfxW1/images-removebg-preview.png"
+              alt="logos"
+            />
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer__section">
       <div class="container grid footer__grid grid__center__v grid__center__h">
+        <div class="nav__col">
+          <p class="footer__heading">Important Links</p>
+          <ul class="footer__nav">
+            <li>
+              <a href="#home" class="footer__nav__item">Create Account</a>
+            </li>
+            <li><a href="#features" class="footer__nav__item">IOS APP</a></li>
+            <li>
+              <a href="#why__us" class="footer__nav__item">Android APP</a>
+            </li>
+            <li><a href="#" class="footer__nav__item">Careers</a></li>
+          </ul>
+        </div>
+        <div class="nav__col">
+          <p class="footer__heading">Quick Access</p>
+          <ul class="footer__nav">
+            <li>
+              <a href="#home" class="footer__nav__item">Home</a>
+            </li>
+            <li><a href="#features" class="footer__nav__item">About</a></li>
+            <li>
+              <a href="#why__us" class="footer__nav__item">Features</a>
+            </li>
+            <li><a href="#" class="footer__nav__item">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="nav__col">
+          <p class="footer__heading">Resources</p>
+          <ul class="footer__nav">
+            <li>
+              <a href="#home" class="footer__nav__item">Meals Delivery</a>
+            </li>
+            <li>
+              <a href="#features" class="footer__nav__item"
+                >Privacy and Terms</a
+              >
+            </li>
+            <li>
+              <a href="#why__us" class="footer__nav__item">Help Center</a>
+            </li>
+            <li><a href="#" class="footer__nav__item">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="address__col">
+          <p class="footer__heading">Contact Us</p>
+          <address class="contacts">
+            <p>1200-A,San Francisco</p>
+            <p>
+              <a href="tel:927-9282-929">+8801790678711</a>
+            </p>
+            <p>
+              <a href="mailto:sojol@ohmresearch.club">sojol@ohmresearch.club</a>
+            </p>
+          </address>
+        </div>
         <div class="footer__left">
           <a href="#">
             <img
@@ -552,62 +687,31 @@
             All rights reserved. &copy;2021 By <span>OurFood Inc.</span>
           </p>
         </div>
-        <div class="address__col">
-          <p class="footer__heading">Contact Us</p>
-          <address class="contacts">
-            <p>1200-A,San Francisco</p>
-            <p>
-              <a href="tel:927-9282-929">+8801790678711</a>
-            </p>
-            <p>
-              <a href="mailto:sojol@ohmresearch.club">sojol@ohmresearch.club</a>
-            </p>
-          </address>
-        </div>
-        <div class="nav__col">
-          <p class="footer__heading">Important Links</p>
-          <ul class="footer__nav">
-            <li>
-              <a href="#home" class="footer__nav__item">Create Account</a>
-            </li>
-            <li><a href="#features" class="footer__nav__item">IOS APP</a></li>
-            <li>
-              <a href="#why__us" class="footer__nav__item">Android APP</a>
-            </li>
-            <li><a href="#" class="footer__nav__item">Careers</a></li>
-          </ul>
-        </div>
-        <div class="nav__col">
-          <p class="footer__heading">Quick Access</p>
-          <ul class="footer__nav">
-            <li>
-              <a href="#home" class="footer__nav__item">Home</a>
-            </li>
-            <li><a href="#features" class="footer__nav__item">About</a></li>
-            <li>
-              <a href="#why__us" class="footer__nav__item">Features</a>
-            </li>
-            <li><a href="#" class="footer__nav__item">Gallery</a></li>
-          </ul>
-        </div>
-        <div class="nav__col">
-          <p class="footer__heading">Resources</p>
-          <ul class="footer__nav">
-            <li>
-              <a href="#home" class="footer__nav__item">Meals Delivery</a>
-            </li>
-            <li>
-              <a href="#features" class="footer__nav__item"
-                >Privacy and Terms</a
-              >
-            </li>
-            <li>
-              <a href="#why__us" class="footer__nav__item">Help Center</a>
-            </li>
-            <li><a href="#" class="footer__nav__item">Careers</a></li>
-          </ul>
-        </div>
       </div>
     </footer>
+
+
+
+    <script>
+  
+  //  simple javascript code for making mobile navigation
+
+  const open =document.querySelector(".nav__open__icon");
+  const close =document.querySelector(".nav__close__icon");
+  const navbar =document.querySelector(".navbar");
+  open.addEventListener("click",()=>{
+   navbar.classList.add("nav__open");
+   document.querySelector(".nav__close__icon").style.display="block";
+   document.querySelector(".nav__open__icon").style.display="none";
+
+  })
+
+ close.addEventListener("click",()=>{
+  navbar.classList.remove("nav__open");
+  document.querySelector(".nav__open__icon").style.display="block";
+  document.querySelector(".nav__close__icon").style.display="none";
+  })
+    </script>
+
   </body>
 </html>
