@@ -1,0 +1,141 @@
+/*  break points */
+/* below 1344px  : smaller laptop*/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .primary__title {
+    font-size: 4.2rem;
+  }
+  .secondary__title {
+    font-size: 3.6rem;
+  }
+  /* .sub__title{
+        font-size: 2.4rem;
+
+    }
+    .step__heading{
+        font-size: 2.4rem;
+        
+    } */
+}
+@media (max-width: 64em) {
+  .hero {
+    max-width: 88rem;
+  }
+
+  .primary__title {
+    font-size: 3.2rem;
+  }
+  .hero__text {
+    font-size: 1.6rem;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1.2rem 3rem;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+
+  .hero__text__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .hero__text__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: inherit;
+  } */
+  .footer__grid {
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+  }
+  /* .sub__title{
+        font-size: 2.4rem;
+
+    }
+    .step__heading{
+        font-size: 2.4rem;
+        
+    } */
+}
+@media (max-width: 48em) {
+  .footer__grid {
+    grid-template-columns: 1.5fr 1.5fr;
+  }
+  .delivered__meals {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2.8rem 0 0 0;
+  }
+  .delivered__meals p {
+    font-size: 1.4rem;
+    margin: 0 2rem;
+  }
+  .nav__bar__icon {
+    display: inline-block;
+  }
+  .navbar {
+    background: var(--colored-text);
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    width: 50%;
+    transform: translateX(-100%);
+    z-index: 1000;
+    opacity: 0;
+    transition: all 0.5s;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav__list {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2.4rem;
+  }
+
+  .nav__item:link,
+  .nav__item:visited {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  .nav__open.navbar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+   
+
+    /* transform: translateX(0%); */
+  }
+ 
+   .nav__open.nav__open__icon {
+    display: block;
+  }
+  .nav__close__icon{
+    display: none;
+  }
+}
+@media (max-width: 30em) {
+  .footer__grid {
+    grid-template-columns: 1.5fr;
+  }
+}
