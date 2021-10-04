@@ -52,6 +52,17 @@
 .nav__item.nav__cta:active {
   background-color: var(--primary-color);
 }
+/* navbar */
+.nav__bar__icon {
+  font-size: 2.4rem;
+  color: #333 !important;
+  cursor: pointer;
+  display: none;
+}
+/* .nav__close */
+/* .nav__close__icon{
+  display: none;
+} */
 /* ******************************** */
 /* Hero */
 /* ******************************** */
@@ -62,8 +73,8 @@
 }
 .hero {
   max-width: 130rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
   grid-gap: 9.6rem;
   margin: 0 auto;
   padding: 0 3.2rem;
@@ -74,8 +85,9 @@
 .hero__text {
   font-size: 2rem;
   line-height: 1.6;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 1px; */
   margin-bottom: 4.8rem;
+  text-align: justify;
 }
 
 .hero__img {
@@ -115,15 +127,15 @@
   color: var(--colored-text);
 }
 /* features section */
-.features__section {
+.company__section {
   padding: 4.6rem 0;
 }
-.heading__features {
+.heading__companies {
   font-size: 2.4rem;
   text-transform: uppercase;
   letter-spacing: 0.75px;
   font-weight: 600;
-  color: #333;
+  color: rgb(138, 138, 138);
   text-align: center;
   margin-bottom: 3.6rem;
 }
@@ -183,21 +195,22 @@
   transform: translate(-50%, -50%);
 }
 .step__img__box:after {
-  width: 50%;
-  padding-bottom: 50%;
-  background: #f0ce81fd;
+  width: 100%;
+  padding-bottom: 100%;
+  background: #f39836bd;
+
   transform: translate(-50%, -50%);
   z-index: -1;
 }
 .step__img__box:before {
-  width: 60%;
-  padding-bottom: 60%;
-  background: #ffe89dfd;
+  width: 80%;
+  padding-bottom: 80%;
+  background: #c56906;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
 .step__image {
-  width: 60%;
+  width: 70%;
 }
 /* meals section */
 .meal__section {
@@ -321,16 +334,18 @@
 .testimonial__section {
   background: var(--grey-color);
 }
-.testimonials{
- 
+.testimonials {
   padding: 4.8rem;
-  
 }
 
 .testimonial {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  background: rgba(255, 255, 255, 0.342);
+  box-shadow: 0 1.4rem 2.8rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1.4rem;
+  padding: 2.5rem 2rem;
 }
 .testimonial img {
   height: 6.4rem;
@@ -340,9 +355,10 @@
 .testimonial__text {
   font-size: 1.4rem;
   color: #333;
+  text-align: justify;
 }
 .testimonial__name {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: #3a1e00;
   font-weight: 600;
 }
@@ -351,28 +367,79 @@
 .gallery__box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-  
+  padding: 4.8rem;
   grid-gap: 16px;
-  grid-auto-flow: dense;  
+  grid-auto-flow: dense;
 }
 .gallery__box img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover;
   border-radius: 9px;
 }
 .horizontal {
   grid-column: span 2;
- 
 }
-.vertical {
+/* .vertical {
   grid-row: span 2;
  
-}
-.big {
+} */
+/* .big {
   grid-column: span 2;
   grid-row: span 2;
+} */
+
+/* *********** */
+/* features section */
+/* *********** */
+
+.features__section {
+  padding: 9.6rem 5.8rem;
+}
+/* .features{
+ 
+} */
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1.4rem;
+  padding: 2.5rem 2rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.feature img {
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+.feature:hover {
+  box-shadow: 0 0.8rem 1.8rem 0 rgba(0, 0, 0, 0.2);
+}
+.feature:hover img {
+  transform: scale(0.95);
+  background: rgba(167, 139, 81, 0.178);
+  padding: 0.8rem;
+}
+
+/* .feature__info{
+  padding: 1.5rem;
+} */
+.features__title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--colored-text);
+  line-height: 1.5;
+}
+.features__text {
+  font-size: 1.2rem;
+  color: #222;
+  text-align: justify;
+  line-height: 1.5;
 }
 
 /* *********** */
@@ -381,6 +448,7 @@
 
 .contact__us__section {
   padding: 9.6rem 0 12.8rem 0;
+  background: var(--grey-color);
 }
 .contact__us {
   display: grid;
@@ -389,8 +457,11 @@
   box-shadow: 0 2.4rem 3.8rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 1.8rem;
 
-  background-image: linear-gradient(to right bottom,  var(--primary-color),
-  var(--secondary-color));
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   overflow: hidden;
   /* height: 50rem; */
 }
@@ -489,7 +560,7 @@
   align-items: center;
   gap: 1rem;
 }
-.footer__left .footer__logo{
+.footer__left .footer__logo {
   height: 100%;
   width: 100%;
 }
