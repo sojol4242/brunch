@@ -18,11 +18,11 @@ tint generator
 */
 /* variables */
 :root {
-  --grey-color: #fdf8e1;
-  --primary-color: #e07704;
-  --secondary-color: #fa901d;
-  --colored-text: #4b2801;
-  --text-color: #fef3e6;
+  --grey-color: #fef4e6;
+  --primary-color: #f48c06;
+  --secondary-color: #f6a338;
+  --colored-text: #311c01;
+  --text-color: #fef4e6;
   --icon-color: #fba94f;
 }
 /* :root {
@@ -74,7 +74,7 @@ html {
   bottom:0;
   width:100%;
   z-index: 9999;
-  background: var(--grey-color);
+  background: #fff;
   box-shadow: 0 1.2rem 3.2rem rgba(0,0,0,0.03);
 }
 
