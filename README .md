@@ -47,8 +47,8 @@ Then open index.html file in your web browser.
 ![Landing page screenshot](https://i.ibb.co/PCrWT8x/food-app.png/700x500?text=Hero)
  
 ### Tab View
-![Landing page screenshot](https://i.ibb.co/zXHF1TY/Fire-Shot-Capture-059-Food-Order-App-Landing-Page-127-0-0-1.png/468x300?text=Hero)
+![Landing page screenshot](https://i.ibb.co/tbsXKdN/Fire-Shot-Capture-065-Food-Order-App-Landing-Page-127-0-0-1.png/468x300?text=Hero)
 ### Mobile View
-![Landing page screenshot](https://i.ibb.co/wYVf2pK/Fire-Shot-Capture-060-Food-Order-App-Landing-Page-127-0-0-1.png/468x300?text=Hero)
+![Landing page screenshot](https://i.ibb.co/r64rwdQ/Fire-Shot-Capture-066-Food-Order-App-Landing-Page-127-0-0-1.png/468x300?text=Hero)
 
   
