@@ -4,7 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Order App Landing Page</title>
+    <link rel="icon" href="./assets/favicon.ico" />
+
+    <title>Brunch</title>
+
+    <meta
+      property="og:title"
+      content="Brunch || A landing page for a food application"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sojol4242.github.io/brunch/" />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/8P9HDtf/Fire-Shot-Capture-054-Food-Order-App-Landing-Page-127-0-0-1.png"
+    />
 
     <!-- font awesome -->
     <link
@@ -55,10 +68,10 @@
               sed magnam architecto consectetur nam repellat cumque est facere
               molestias adipisci dicta iure reiciendis, maxime
             </p>
-          <div>
-            <a href="#" class="btn btn__full">Start Eating</a>
-            <a href="#" class="btn btn__outline">Learn More &darr;</a>
-          </div>
+            <div>
+              <a href="#" class="btn btn__full">Start Eating</a>
+              <a href="#" class="btn btn__outline">Learn More &darr;</a>
+            </div>
 
             <div class="delivered__meals">
               <div class="delivered__images">
@@ -692,28 +705,23 @@
       </div>
     </footer>
 
-
-
     <script>
-  
-  //  simple javascript code for making mobile navigation
+      //  simple javascript code for making mobile navigation
 
-  const open =document.querySelector(".nav__open__icon");
-  const close =document.querySelector(".nav__close__icon");
-  const navbar =document.querySelector(".navbar");
-  open.addEventListener("click",()=>{
-   navbar.classList.add("nav__open");
-   document.querySelector(".nav__close__icon").style.display="block";
-   document.querySelector(".nav__open__icon").style.display="none";
+      const open = document.querySelector(".nav__open__icon");
+      const close = document.querySelector(".nav__close__icon");
+      const navbar = document.querySelector(".navbar");
+      open.addEventListener("click", () => {
+        navbar.classList.add("nav__open");
+        document.querySelector(".nav__close__icon").style.display = "block";
+        document.querySelector(".nav__open__icon").style.display = "none";
+      });
 
-  })
-
- close.addEventListener("click",()=>{
-  navbar.classList.remove("nav__open");
-  document.querySelector(".nav__open__icon").style.display="block";
-  document.querySelector(".nav__close__icon").style.display="none";
-  })
+      close.addEventListener("click", () => {
+        navbar.classList.remove("nav__open");
+        document.querySelector(".nav__open__icon").style.display = "block";
+        document.querySelector(".nav__close__icon").style.display = "none";
+      });
     </script>
-
   </body>
 </html>
