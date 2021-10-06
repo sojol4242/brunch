@@ -317,6 +317,7 @@
   box-shadow: 0 1.4rem 2.8rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 1.4rem;
   padding: 2.5rem 2rem;
+  transition: all 0.5s linear; 
 }
 .testimonial img {
   height: 6.4rem;
@@ -348,7 +349,13 @@
   height: 100%;
   object-fit: cover;
   border-radius: 9px;
+  transition: all 0.2s linear; 
 }
+.gallery__box img:hover,.testimonial:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
 .horizontal {
   grid-column: span 2;
 }
