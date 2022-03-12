@@ -42,14 +42,10 @@ Clone brunch repo with
 ```
 Then open index.html file in your web browser.
     
-### Screenshots
-### Desktop View
-![Landing page screenshot](https://i.ibb.co/PCrWT8x/food-app.png/700x500?text=Hero)
-
-### Tab View
-![Landing page screenshot](https://i.ibb.co/r64rwdQ/Fire-Shot-Capture-066-Food-Order-App-Landing-Page-127-0-0-1.png/468x300?text=Hero) 
-### Mobile View
-![Landing page screenshot](https://i.ibb.co/tbsXKdN/Fire-Shot-Capture-065-Food-Order-App-Landing-Page-127-0-0-1.png/468x300?text=Hero)
+### Responsive Views
+ 
+![Landing page screenshot](https://i.ibb.co/h7Tcrqx/3-devices-black-1.png)
+ 
  
 
   
